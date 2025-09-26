@@ -21,7 +21,7 @@ const Signup = () => {
           />
 
           {/* Repeat Password */}
-          <label>Repeat Password</label>
+          <label>Comfirm Password</label>
           <input type="password" placeholder="Repeat your password" />
 
           {/* Submit Button */}
