@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://tmmsystem-sep490g143-production.up.railway.app/v1/auth";
+const API_URL = "https://tmmsystem-sep490g143-production.up.railway.app/v1/auth";
 
 export const login = async (email, password) => {
   try {

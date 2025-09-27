@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Login.css";
 import { login } from "../../services/authApi";
+import { useNavigate } from "react-router-dom";
 
 
 const Login = () => {
@@ -8,7 +9,7 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
-
+const navigate = useNavigate();
   const handleLogin = async () => {
     setError("");
     setLoading(true);
@@ -17,7 +18,7 @@ const Login = () => {
       localStorage.setItem("token", data.token); 
       alert("Login successful!");
       console.log("User data:", data);
-      window.location.href = "/dashboard";
+      navigate('/dashboard');
     } catch (err) {
       setError(err.message);
     } finally {
