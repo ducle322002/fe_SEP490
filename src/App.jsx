@@ -3,8 +3,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Login from './pages/login/Login';
-import Signup from './pages/signup/Signup';
+
 import AdminDashboard from './pages/admin/AdminDashboard';
+import CreateAccount from './pages/admin/CreateAccount';
 
 function App() {
 
@@ -15,7 +16,7 @@ function App() {
         <BrowserRouter>
         <Routes>
           <Route path="/" element={<Login />} />
-          <Route path="/signup" element={<Signup />} />
+          <Route path="/createuser" element={<CreateAccount />} />
           <Route path="/dashbroad" element={<AdminDashboard />} />
         </Routes>
         </BrowserRouter>

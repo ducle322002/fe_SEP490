@@ -1,4 +1,4 @@
-/* Tổng thể */
+
 .signup-container {
   display: flex;
   justify-content: center;
@@ -7,8 +7,6 @@
   background: #f7f9fc;
   font-family: Arial, sans-serif;
 }
-
-/* Box chính */
 .signup-box {
   background: white;
   padding: 40px;
@@ -28,9 +26,6 @@
   margin-bottom: 5px;
   color: #1a1a1a;
 }
-
-
-/* Form */
 .signup-form {
   text-align: left;
 }
@@ -44,7 +39,9 @@
 }
 
 .signup-form input[type="email"],
-.signup-form input[type="password"] {
+.signup-form input[type="password"],
+.signup-form input[type="phoneNumber"]
+ {
   width: 100%;
   padding: 12px;
   margin-bottom: 18px;
@@ -55,11 +52,11 @@
 }
 
 .signup-form input[type="email"]:focus,
-.signup-form input[type="password"]:focus {
+.signup-form input[type="phoneNumber"]:focus,
+.signup-form input[type="password"]:focus
+ {
   border-color: #4285f4;
 }
-
-/* Submit Button */
 .signup-btn {
   width: 100%;
   padding: 12px;
@@ -76,8 +73,6 @@
 .signup-btn:hover {
   background: #0041cc;
 }
-
-/* Sign In Text */
 .signin-text {
   margin-top: 15px;
   font-size: 14px;

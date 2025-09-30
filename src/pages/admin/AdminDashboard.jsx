@@ -30,10 +30,10 @@ const AdminDashboard = () => {
       <div className="dashboard-content">
         <div className="header">
           <h2>Quản Lý Tài Khoản</h2>
-          <button className="create-btn">Tạo Tài Khoản</button>
+          <a href="/createuser"><button className="create-btn">Tạo Tài Khoản</button></a>
         </div>
         <div className="filter-section">
-          <input type="text" placeholder="Search" className="search-input" />
+          <input type="text" placeholder="tìm kiếm" className="search-input" />
           <select className="role-filter">
             <option>All Roles</option>
             <option>ADMIN</option>
@@ -53,7 +53,7 @@ const AdminDashboard = () => {
                   <th>Số Điện Thoại</th>
                   <th>Vai Trò</th>
                   <th>Trạng Thái</th>
-                  <th>Hành Động</th>
+                  
                 </tr>
               </thead>
               <tbody>
@@ -82,7 +82,7 @@ const AdminDashboard = () => {
                         </span>
                       </td>
                       <td>
-                        <button className="update-btn">Update</button>
+                        <button className="update-btn">Cập nhật</button>
                       </td>
                     </tr>
                   ))

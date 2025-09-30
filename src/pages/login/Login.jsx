@@ -68,7 +68,7 @@ const navigate = useNavigate();
           </button>
 
           <p className="signup-link">
-            Forgot password? <a href="/reset">Reset</a>
+            Forgot password? <a >Reset</a>
           </p>
         </form>
       </div>
