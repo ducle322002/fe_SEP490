@@ -18,7 +18,7 @@ const navigate = useNavigate();
       localStorage.setItem("token", data.token); 
       alert("Login successful!");
       console.log("User data:", data);
-      navigate('/dashboard');
+      navigate('/dashbroad');
     } catch (err) {
       setError(err.message);
     } finally {
@@ -68,7 +68,7 @@ const navigate = useNavigate();
           </button>
 
           <p className="signup-link">
-            Forgot password? <a >Reset</a>
+             <a href="/changepass" style={{color:'blue',textDecoration:'none'}}>Đổi Mật khẩu?</a>
           </p>
         </form>
       </div>

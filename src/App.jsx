@@ -6,6 +6,7 @@ import Login from './pages/login/Login';
 
 import AdminDashboard from './pages/admin/AdminDashboard';
 import CreateAccount from './pages/admin/CreateAccount';
+import ChangePass from './pages/changePass/ChangePass';
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Login />} />
           <Route path="/createuser" element={<CreateAccount />} />
+          <Route path="/changepass" element={<ChangePass />} />
           <Route path="/dashbroad" element={<AdminDashboard />} />
         </Routes>
         </BrowserRouter>

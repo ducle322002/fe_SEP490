@@ -100,6 +100,7 @@ const CreateAccount = () => {
         </form>
 
       </div>
+      
     </div>
   );
 };

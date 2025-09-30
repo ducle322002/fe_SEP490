@@ -36,7 +36,7 @@
   justify-content: space-between;
   margin-bottom: 15px;
 }
-.search-input {
+.search {
   width: 300px;
   padding: 6px 10px;
   border: 1px solid #ccc;
@@ -122,3 +122,57 @@
   background-color: #1976d2;
   color: white;
 }
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  width: 400px;
+}
+
+.popup h3 {
+  margin-bottom: 15px;
+}
+
+.popup input, .popup select {
+  width: 100%;
+  margin: 8px 0;
+  padding: 8px;
+}
+
+.popup-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 15px;
+}
+
+.save-btn {
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin-right: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  background: #f44336;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
